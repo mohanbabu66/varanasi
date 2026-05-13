@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/mohanbabu66/varanasi.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t varanasi1:latest .'
