@@ -5,8 +5,8 @@ WORKDIR /app
 # Copy entire website into the container
 COPY . /app
 
-EXPOSE 8000
+EXPOSE 9000
 
 # Start the web server
-CMD ["python", "-m", "http.server", "8000"]
+CMD ["python", "-m", "http.server", "9000"]
 
